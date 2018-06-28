@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>getElementById</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">MDN Description</a></p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<!-- reference var myImage with source for image 1 -->
+<button type="button" onclick="document.getElementById('myImage').src='driver.jpg'">Driver Side</button>
+
+<!-- create img tag with var myImage as source -->
+<img id="myImage" src="driver.jpg" style="width:200px">
+
+<!-- reference var myImage with source for image 2 -->
+<button type="button" onclick="document.getElementById('myImage').src='passenger.jpg'">Passenger Side</button>
+
+</body>
+</html>
