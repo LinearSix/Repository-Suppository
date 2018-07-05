@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The Addition Operator +=</h2>
+<p>var x = 10</p>
+<p>x += 5</p>
+<p id="demo_plus_eqls"></p>
+
+<h2>The Subtraction Operator -=</h2>
+<p>var a = 10</p>
+<p>a -= 5</p>
+<p id="demo_mnus_eqls"></p>
+
+<h2>The Multiplication Operator *=</h2>
+<p>var b = 10</p>
+<p>b *= 5</p>
+<p id="demo_mply_eqls"></p>
+
+<h2>The Division Operator /=</h2>
+<p>var c = 10</p>
+<p>c /= 5</p>
+<p id="demo_divd_eqls"></p>
+
+<h2>The Remainder Operator %=</h2>
+<p>var y = 10</p>
+<p>y %= 4.5</p>
+<p id="demo_pcnt_eqls"></p>
+
+<h2>The Exponentiation Operator **</h2>
+<p>var z = 10</p>
+<p>z = z ** 3</p>
+<p id="demo_expn"></p>
+
+<script>
+var x = 10;
+x += 5;
+document.getElementById("demo_plus_eqls").innerHTML = x;
+
+var a = 10;
+a -= 5;
+document.getElementById("demo_mnus_eqls").innerHTML = a;
+
+var b = 10;
+b *= 5;
+document.getElementById("demo_mply_eqls").innerHTML = b;
+
+var c = 10;
+c /= 5;
+document.getElementById("demo_divd_eqls").innerHTML = c;
+
+var y = 10;
+y %= 4.5;
+document.getElementById("demo_pcnt_eqls").innerHTML = y;
+
+var z = 10;
+z = z ** 3;
+document.getElementById("demo_expn").innerHTML = z;
+</script>
+
+</body>
+</html>
