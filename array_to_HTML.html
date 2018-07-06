@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <script>
+            var yearStart = 2000;
+            var yearEnd = 2040;
+
+            var arr = [];
+
+            while(yearStart < yearEnd+1){
+              arr.push(yearStart++);
+            }
+
+            document.getElementById("display_arr").innerHTML = arr[3];
+
+          </script>
+        </head>
+        <body>
+          <table border="1">
+
+            <script>
+
+              for (var i=0; i<30; i++) {
+                document.write("<tr><td>Number " + i + " is:</td>");
+                document.write("<td>" + arr[i] + "</td></tr>");
+              }
+
+            </script>
+
+          </table>
+            <p id="display_arr"></p>
+
+        </body>
+    </html>
