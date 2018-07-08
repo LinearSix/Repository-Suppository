@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+        var intStart = 1;
+        var intEnd = 100;
+
+        var intArr = [];
+
+        while(intStart < intEnd+1){
+          intArr.push(intStart++);
+        }
+
+        // document.getElementById("display_intArr").innerHTML = Intarr[3];
+
+      </script>
+    </head>
+    <body>
+      <p>List numbers 1-100</p>
+      <p>Replace numbers divisible by 3 with &quot;Fizz&quot;</p>
+      <p>Replace numbers divisible by 5 with &quot;Buzz&quot;</p>
+      <p>Replace numbers divisible by 15 with &quot;FizzBuzz&quot;</p>
+      <table border="0">
+
+        <script>
+          intArrLen = intArr.length
+
+          for (var i=0; i<intArrLen; i++) {
+            // document.write("<tr><td>Number " + i + " is:</td>");
+            if (Number.isInteger(intArr[i]/15)) {
+              document.write("<td>FizzBuzz</td></tr>");
+            } else if (Number.isInteger(intArr[i]/3)) {
+              document.write("<td>Fizz</td></tr>");
+            } else if (Number.isInteger(intArr[i]/5)) {
+              document.write("<td>Buzz</td></tr>");
+            } else {
+              document.write("<td>" + intArr[i] + "</td></tr>");
+            }
+          }
+
+        </script>
+
+      </table>
+        <p id="display_intArr"></p>
+
+    </body>
+</html>
